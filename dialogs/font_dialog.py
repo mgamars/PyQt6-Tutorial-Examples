@@ -48,7 +48,8 @@ class Example(QWidget):
 
     def showDialog(self):
 
-        font, ok = QFontDialog.getFont()
+        # font, ok = QFontDialog.getFont()
+        ok, font = QFontDialog.hetFont()
 
         if ok:
             self.lbl.setFont(font)
